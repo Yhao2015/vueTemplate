@@ -1,0 +1,80 @@
+/*登录页面*/
+@import '~@a/less/images.less';
+
+.jw_loginBg {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background-color: #031a3f;
+    background-image: url(@login);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    .jw_loginTitle {
+        font-size: 40px;
+        font-family: Source Han Sans CN;
+        font-weight: bold;
+        color: #FFFFFF;
+        line-height: 24px;
+        position: absolute;
+        top: 278px;
+        right: 199px;
+        letter-spacing: 4px;
+    }
+    
+    .jw_loginForm {
+        background-image: url(~@a/image/loginBox.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 355px;
+        width: 367px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 347px;
+        right: 189px;
+
+        .jw_loginText {
+            text-align: center;
+            font-size: 24px;
+            font-family: Source Han Sans CN;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 24px;
+        }
+
+        .jw_formItem {
+            margin-top: 64px;
+
+            /deep/ .ant-form-item-label > label {
+                font-size: 18px;
+            }
+        }
+
+        .jw_loginBtn {
+            position: absolute;
+            bottom: 48px;
+            width: 245px;
+            right: 45px;
+        }
+    }
+
+    .jw_footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 12px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.47);
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+
+        .jw_company {
+            font-size: 18px;
+            background: linear-gradient(0deg, #78E9FF 0.244140625%, #00AEFF 99.2431640625%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

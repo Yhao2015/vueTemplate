@@ -1,0 +1,87 @@
+@import './style.less'; // 用于覆盖上面定义的变量
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/** webkit滚动条样式 **/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px #1890ff;
+    border-radius: 0;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #1890ff !important;
+    -webkit-box-shadow: inset 6px #1890ff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*bootstrap常用样式*/
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+/*自定义单行样式*/
+.cursorP {
+    cursor: pointer;
+}
+
+/*自定义单组件样式*/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/*  超出隐藏，省略号显示 */
+.overhidden {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}

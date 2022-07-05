@@ -1,0 +1,390 @@
+@import '~ant-design-vue/dist/antd.less'; // 引入官方提供的 less 样式入口文件
+@primary-color: #1890ff; // 全局主色
+@checkbox-check-color: #1890ff;
+//解决分页分离样式问题
+.ant-pagination-options {
+    position: relative;
+}
+//统一修改表单项间距
+.ant-form-item {
+    margin-bottom: 15px !important;
+}
+
+//下面的样式可按需调整修改
+.ant-layout-header {
+    background: #fff;
+    z-index: 2;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    padding: 0px 20px;
+    border-bottom: 2px solid rgb(240, 242, 245);
+
+    .trigger {
+        font-size: 20px;
+    }
+}
+
+.ant-layout.ant-layout-has-sider {
+    min-height: 100vh;
+    height: 1080px;
+}
+
+.ant-layout-sider {
+    z-index: 3;
+    background: linear-gradient(180deg, #242834, #1b2b76);
+}
+
+.ant-menu {
+    background: transparent;
+    color: rgba(255, 255, 255, .6) !important;
+}
+
+.ant-menu-inline {
+    padding: 0 24px;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: transparent;
+    box-shadow: none;
+}
+
+.ant-menu-submenu {
+    margin-top: 10px;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active {
+    color: #004DFF;
+    background: transparent;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected::before,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-active::before {
+    background: #004DFF;
+}
+
+.ant-menu-vertical .fx_specialItem {
+    padding: 0px !important;
+    text-align: center;
+}
+
+.fx_specialItem {
+    padding: 0px !important;
+
+    .fx_specialMenuItem {
+        padding: 0 24px;
+    }
+}
+
+.fx_specialItem:hover {
+    .fx_specialMenuItem {
+        background: linear-gradient(90deg, #009dff, #2d77ff) !important;
+        border-radius: 30px;
+        border: none !important;
+        color: #fff !important;
+    }
+}
+
+.ant-menu-submenu-selected .ant-menu-submenu-title,
+.fx_specialItem.ant-menu-item-selected {
+    background: linear-gradient(90deg, #009dff, #2d77ff) !important;
+    border-radius: 30px;
+    border: none !important;
+    margin: 0 auto;
+    color: #fff !important;
+}
+
+.ant-menu-submenu-inline:hover,
+.fx_specialItem:hover {
+    .ant-menu-submenu-title {
+        background: linear-gradient(90deg, #009dff, #2d77ff) !important;
+        border-radius: 30px;
+        border: none !important;
+        margin: 0 auto;
+        color: #fff !important;
+    }
+}
+
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+    border: none;
+}
+
+.ant-tree.ant-tree-block-node li .ant-tree-node-content-wrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+    margin: 0px;
+    font-size: 20px;
+    vertical-align: text-bottom;
+}
+
+.ant-menu-inline .ant-menu-submenu-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ant-form-item-label > label {
+    color: #FFFFFF;
+}
+
+.ant-input,
+.ant-input-number,
+.ant-input[disabled],
+.ant-input-number[disabled],
+.ant-select-selection,
+.ant-time-picker-input,
+.ant-time-picker-input[disabled] {
+    background: transparent;
+    border: 1px solid #1890ff !important;
+    color: #FFFFFF;
+}
+
+.ant-input-number-handler-wrap {
+    background: transparent;
+    border-left: 1px solid #1890ff;
+}
+
+.ant-input[disabled],
+.ant-select-disabled .ant-select-selection {
+    background: #1b3360;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ant-calendar-picker-clear, 
+.ant-input-clear-icon,
+.ant-select-arrow,
+.ant-select-selection__clear {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.ant-checkbox-wrapper span{
+    color: #FFFFFF;
+}
+
+.ant-checkbox-inner {
+    background-color: transparent !important;
+    border: 1px solid #1890ff !important;
+}
+
+
+.jw_searchForm {
+    .ant-form-item {
+        margin-bottom: 0 !important;
+    }
+
+   .ant-form-inline .ant-form-item {
+        display: flex;
+        margin-right: 0px !important;
+
+       .ant-form-item-control-wrapper {
+            flex: 1;
+        }
+    }
+
+    .ant-radio-wrapper {
+        color: #FFFFFF;
+    }
+
+    .ant-select-selection--multiple .ant-select-selection__choice {
+        background-color: #1890ff;
+        border: 1px solid #1890ff;
+        color: #FFFFFF;
+    }
+
+   i.anticon.anticon-close.ant-select-remove-icon {
+        color: #FFFFFF;
+    }
+}
+
+.jw_treeMultiple span.ant-select-tree-checkbox-inner{
+    background-color: #FFFFFF !important;
+}
+
+.jw_treeMultiple, .jw_treeSelect {
+    top: 42px !important;
+    left: 0px !important;
+}
+
+.jw_popupContainer {
+    top: 36px !important;
+    left: 0px !important;
+}
+
+.ant-pagination li{
+    color: #FFFFFF;
+}
+
+// tabs 
+.jw_tab {
+    .ant-tabs-bar {
+        border-bottom: 0 !important;
+        margin: 0;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+        color: #E4F2FB;
+        background: #10518e;
+        border: 1px solid #1890ff;
+        box-shadow: 1px 1px 2px -2px rgba(24, 144, 255, 0.4)
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+        border-bottom: 0;
+        background: #001845;
+    }
+
+    .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active::before {
+        border-bottom: 6px solid #001845;
+        bottom: -2px;
+    }
+}
+
+.ant-empty {
+    display: flex;
+    width: 100%;
+    height: 105%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ant-empty .ant-empty-description{
+    color: #FFFFFF;
+}
+
+.ant-table-fixed-header .ant-table-scroll .ant-table-header::-webkit-scrollbar {
+    border: 0;
+}
+
+.has-error .ant-input-affix-wrapper .ant-input, .has-error .ant-input-affix-wrapper .ant-input:hover {
+    background-color: transparent;
+}
+
+.has-error .ant-input, .has-error .ant-input:hover {
+    background-color: transparent;
+}
+
+.ant-card {
+    background: transparent;
+}
+
+.ant-cascader-picker {
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.ant-cascader-picker-clear {
+    background-color: transparent;
+}
+
+
+// 弹框
+.ant-modal-content {
+    background: rgba(3, 21, 51, 0.95);
+    border: 1px solid rgba(115, 160, 255, 0.45);
+
+    .ant-modal-header {
+        color: #FFFFFF;
+        background: transparent;
+        border-bottom: 1px solid rgba(115, 160, 255, 0.45);
+
+        .ant-modal-title {
+            color: #FFFFFF;
+        }
+    }
+
+    .anticon {
+        color: #FFFFFF;
+    }
+
+    .ant-modal-body {
+        color: #FFFFFF;
+    }
+
+    .ant-modal-footer {
+        border-top: 1px solid rgba(115, 160, 255, 0.45);
+        background: transparent;
+    }
+}
+
+.ant-form-item-control span.ant-form-item-children{
+    color: #FFFFFF;
+}
+
+.jw_transfer {
+    .ant-transfer-list-header {
+        background: transparent;
+        color: #FFFFFF;
+        border-bottom: 1px solid #1890ff;
+    }
+
+    .ant-transfer-list {
+        border: 1px solid #1890ff;
+    }
+
+    table > .ant-table-thead > tr > th {
+        background: transparent !important;
+        border-bottom: 1px solid #1890ff;
+        color: #FFFFFF;
+    }
+
+    .ant-table-row {
+        background: transparent !important;
+        color: #FFFFFF !important;
+    }
+
+    .ant-table-row:last-child td, .ant-table-tbody>tr>td {
+        border-bottom: 1px solid #1890ff !important;
+        background: transparent !important;
+    }
+
+    .ant-table-placeholder {
+        background: transparent;
+        color: #FFFFFF;
+        border-top: 1px solid #1890ff;
+    }
+
+    .ant-transfer-operation {
+        .ant-btn {
+            background: transparent;
+            color: #FFFFFF;
+            border-color: #1890ff;
+        }
+    }
+}
+
+.ant-radio-disabled + span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.ant-upload.ant-upload-select-picture-card {
+    background: transparent;
+    border: 1px solid #1890ff;
+    color: #ffffff;
+
+    .ant-upload-text {
+        color: #ffffff;
+    }
+}
+
+.ant-upload-list-picture .ant-upload-list-item, 
+.ant-upload-list-picture-card .ant-upload-list-item {
+    border: 1px solid #1890ff;
+}
+
+.ant-upload-list-item-name {
+    color: #ffffff;
+}
+
+
+.ant-input-password-icon {
+    color: #FFFFFF;
+}
